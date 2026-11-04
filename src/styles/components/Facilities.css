@@ -1,0 +1,9 @@
+/* Facilities section styles */
+.facility-card {
+  transition: all 0.35s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+}
+

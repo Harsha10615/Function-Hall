@@ -1,0 +1,9 @@
+/* Footer section styles */
+.footer-link {
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #D4AF37;
+}
+

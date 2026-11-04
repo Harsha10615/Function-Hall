@@ -1,0 +1,10 @@
+/* Booking Form specific styles */
+.booking-form-input {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.6);
+}
+

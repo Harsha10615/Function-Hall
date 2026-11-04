@@ -1,0 +1,12 @@
+/* Navbar specific styles */
+.navbar-scrolled {
+  background: rgba(5, 20, 14, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.navbar-brand-glow:hover {
+  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.5));
+}
+

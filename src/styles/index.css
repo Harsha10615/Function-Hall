@@ -1,0 +1,93 @@
+/* Component Specific Styles */
+@import './components/Navbar.css';
+@import './components/Hero.css';
+@import './components/About.css';
+@import './components/Facilities.css';
+@import './components/Gallery.css';
+@import './components/BookingForm.css';
+@import './components/Location.css';
+@import './components/Contact.css';
+@import './components/Footer.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Royal scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #092117;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 5px;
+    border: 2px solid #092117;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F5DE88;
+  }
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #ECC868 0%, #FDF3C8 40%, #D4AF37 70%, #9C771B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #F5DE88 50%, #B89223 100%);
+  }
+
+  .border-gold-glow {
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  }
+
+  .glass-card-dark {
+    background: rgba(9, 33, 23, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+  }
+
+  .pattern-royal {
+    background-color: #092117;
+    background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .pattern-cream {
+    background-color: #FAF6F0;
+    background-image: radial-gradient(rgba(14, 51, 37, 0.06) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(212, 175, 55, 0.8);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}

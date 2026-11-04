@@ -1,0 +1,9 @@
+/* About section styles */
+.about-card-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.about-card-hover:hover {
+  transform: translateY(-4px);
+}
+
